@@ -1,0 +1,214 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Quiénes somos · Nailuxe by Irene Álvarez · Gijón</title>
+<meta name="description" content="Conoce a Irene Álvarez, manicurista con más de 9 años de experiencia y especializada en nail art, y su estudio Nailuxe en Viesques, Gijón.">
+<meta name="theme-color" content="#0d0b0b">
+<link rel="icon" href="favicon.ico" sizes="any">
+<link rel="icon" href="favicon.svg" type="image/svg+xml">
+<link rel="icon" href="favicon-192.png" sizes="192x192" type="image/png">
+<link rel="apple-touch-icon" href="apple-touch-icon.png">
+<meta property="og:image" content="img/irene.jpg">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Bodoni+Moda:ital,opsz,wght@0,6..96,400;0,6..96,500;1,6..96,400&family=Manrope:wght@300;400;500;600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css?v=2">
+<style>
+.qs-hero{position:relative;min-height:100svh;background:var(--ink);color:var(--paper);display:flex;align-items:flex-end;overflow:hidden}
+.qs-hero img{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;object-position:center 22%;transform:scale(1.06);animation:kb 14s ease-out forwards}
+@keyframes kb{to{transform:scale(1)}}
+.qs-hero:after{content:"";position:absolute;inset:0;background:linear-gradient(180deg,rgba(13,11,11,.15) 30%,rgba(13,11,11,.92) 82%)}
+.qs-hero .wrap{position:relative;z-index:2;padding:0 0 calc(56px + env(safe-area-inset-bottom))}
+.qs-hero h1{font-size:clamp(3.4rem,11vw,7.5rem);margin:.8rem 0 1rem}
+.qs-hero h1 em{color:var(--rose)}
+.qs-hero p{max-width:30em;opacity:.8;font-weight:300}
+.sig-line{display:flex;align-items:center;gap:1rem;margin-top:1.6rem;font-family:var(--serif);font-style:italic;font-size:1.4rem}
+.sig-line:before{content:"";width:40px;height:1px;background:var(--paper);opacity:.5}
+
+.story{background:var(--paper)}
+.story-grid{display:grid;grid-template-columns:1fr 1fr;gap:4rem;align-items:start}
+.story .big{font-family:var(--serif);font-size:clamp(1.7rem,4.2vw,2.7rem);line-height:1.2}
+.story .big em{color:var(--wine2)}
+.story p.t{opacity:.78;font-size:1.05rem;margin-bottom:1.1rem}
+@media(max-width:860px){.story-grid{grid-template-columns:1fr;gap:2rem}}
+
+.nums{background:var(--wine);color:var(--paper);padding:56px 0}
+.nums .wrap{display:grid;grid-template-columns:repeat(3,1fr);gap:1rem;text-align:center}
+.nums strong{font-family:var(--serif);font-weight:400;font-size:clamp(2.6rem,8vw,4.6rem);display:block;line-height:1}
+.nums small{font-size:.68rem;letter-spacing:.22em;text-transform:uppercase;opacity:.7}
+
+.esp{background:var(--paper2)}
+.esp-cards{display:grid;grid-template-columns:repeat(3,1fr);gap:14px}
+.esp-card{border-radius:26px;overflow:hidden;background:#fff;display:flex;flex-direction:column}
+.esp-card img{aspect-ratio:4/3.4;object-fit:cover;width:100%}
+.esp-card div{padding:1.3rem 1.4rem 1.6rem}
+.esp-card h3{font-size:1.6rem;margin-bottom:.4rem}
+.esp-card p{opacity:.7;font-size:.94rem}
+@media(max-width:860px){.esp-cards{grid-template-columns:none;grid-auto-flow:column;grid-auto-columns:80%;overflow-x:auto;scroll-snap-type:x mandatory;scrollbar-width:none;margin-inline:-20px;padding-inline:20px}.esp-card{scroll-snap-align:center}}
+
+.ritual{background:var(--ink);color:var(--paper)}
+.ritual h2 em{color:var(--rose)}
+.steps{display:grid;gap:0;counter-reset:s}
+.st{display:grid;grid-template-columns:64px 1fr;gap:1.2rem;padding:1.6rem 0;border-top:1px solid var(--line);cursor:pointer}
+.st:last-child{border-bottom:1px solid var(--line)}
+.st b{font-family:var(--serif);font-weight:400;font-size:2.6rem;line-height:1;opacity:.35;transition:.3s}
+.st h3{font-size:1.6rem;display:flex;justify-content:space-between;align-items:center;gap:1rem}
+.st h3:after{content:"+";font-family:var(--sans);font-weight:300;font-size:1.4rem;opacity:.6;transition:.3s}
+.st p{max-height:0;overflow:hidden;opacity:0;transition:max-height .5s,opacity .4s,margin .4s;font-weight:300}
+.st.open b{opacity:1;color:var(--rose)}
+.st.open h3:after{transform:rotate(45deg)}
+.st.open p{max-height:200px;opacity:.75;margin-top:.6rem}
+
+.valores{background:var(--paper)}
+.val{display:grid;grid-template-columns:repeat(3,1fr);gap:14px}
+.val div{border:1px solid rgba(13,11,11,.12);border-radius:24px;padding:1.6rem}
+.val i{font-style:normal;font-size:1.6rem}
+.val h3{font-size:1.5rem;margin:.6rem 0 .4rem}
+.val p{opacity:.7;font-size:.94rem}
+@media(max-width:860px){.val{grid-template-columns:1fr}}
+
+.estudio{background:var(--paper2)}
+.est-card{background:var(--ink);color:var(--paper);border-radius:32px;padding:clamp(1.8rem,5vw,3.4rem);display:grid;grid-template-columns:1fr auto;gap:2rem;align-items:center}
+.est-card h2 em{color:var(--rose)}
+.est-card p{opacity:.75;margin-top:.8rem}
+.est-card .btns{display:flex;flex-direction:column;gap:.6rem}.est-card .btns .btn{justify-content:center}
+@media(max-width:860px){.est-card{grid-template-columns:1fr}}
+</style>
+</head>
+<body>
+
+<header id="top">
+  <div class="wrap nav">
+    <a href="index.html" class="brand"><span class="mono">NL</span><b>NAILUXE</b></a>
+    <nav class="links">
+      <a href="index.html#probador">Probador</a>
+      <a href="index.html#servicios">Servicios</a>
+      <a href="index.html#disenos">Diseños</a>
+      <a href="quienes-somos.html" style="opacity:1">Quiénes somos</a>
+      <a class="btn btn-solid" href="index.html#cita">Pedir cita</a>
+    </nav>
+    <button class="menu-btn" id="menuBtn" aria-expanded="false">Menú ▾</button>
+  </div>
+</header>
+<div class="drop" id="drop">
+  <a href="index.html">Inicio <span>01</span></a>
+  <a href="index.html#probador">Probador de uñas <span>02</span></a>
+  <a href="index.html#servicios">Servicios y precios <span>03</span></a>
+  <a href="index.html#cita">Montar mi cita <span>04</span></a>
+  <a href="quienes-somos.html">Quiénes somos <span>05</span></a>
+  <a href="index.html#disenos">Diseños <span>06</span></a>
+  <a href="index.html#donde">Dónde estamos <span>07</span></a>
+</div>
+
+<section class="qs-hero">
+  <img src="img/irene.jpg" alt="Irene Álvarez, fundadora de Nailuxe">
+  <div class="wrap">
+    <span class="eyebrow" style="opacity:.75">Quiénes somos</span>
+    <h1>Detrás de<br>cada uña, <em>Irene.</em></h1>
+    <p>Manicurista con más de 9 años de experiencia, especializada en nail art y fundadora de Nailuxe, su estudio en Viesques, Gijón.</p>
+    <div class="sig-line">Irene Álvarez</div>
+  </div>
+</section>
+
+<section class="story">
+  <div class="wrap story-grid">
+    <div>
+      <span class="eyebrow" style="opacity:.6">Mi historia</span>
+      <p class="big rv" style="margin-top:1rem">Nailuxe nació para que hacerte las uñas sea <em>una experiencia pensada para ti</em>, no un trámite.</p>
+    </div>
+    <div>
+      <p class="t rv">Llevo más de nueve años dedicándome a las uñas. Empecé por pasión y acabé especializándome en lo que más me gusta: el nail art, ese momento en el que una uña se convierte en un lienzo pequeñito.</p>
+      <p class="t rv">Con los años tuve claro el tipo de estudio que quería: uno donde se trabaje con calma, una clienta cada vez, cuidando la uña natural tanto como el diseño. Así nació Nailuxe.</p>
+      <p class="t rv">Hoy, además de uñas, hago cejas, pestañas y maquillaje. Pero la idea sigue siendo la misma: que salgas por la puerta sintiéndote tú, en tu mejor versión.</p>
+    </div>
+  </div>
+</section>
+
+<div class="nums">
+  <div class="wrap">
+    <div class="rv"><strong data-count="9" data-prefix="+">+9</strong><small>años de oficio</small></div>
+    <div class="rv"><strong data-count="5" data-dec="1">5,0</strong><small>nota en Booksy</small></div>
+    <div class="rv"><strong>1 a 1</strong><small>siempre contigo</small></div>
+  </div>
+</div>
+
+<section class="esp">
+  <div class="wrap">
+    <div class="head">
+      <div><span class="eyebrow" style="opacity:.6">Especialidades</span><h2 class="rv">Lo que mejor<br><em>se me da</em></h2></div>
+      <p class="rv">Desliza para ver las tres cosas por las que más me buscan.</p>
+    </div>
+    <div class="esp-cards">
+      <article class="esp-card"><img src="img/flor.jpg" alt="Nail art de flor pintada a mano" loading="lazy"><div><h3>Nail art a mano</h3><p>Flores, animal print, lunares, kanji… Diseños pintados uña a uña, sin pegatinas.</p></div></article>
+      <article class="esp-card"><img src="img/nude.jpg" alt="Gel X nude en forma almendra" loading="lazy"><div><h3>Gel X y Dual System</h3><p>Uñas largas, finas y naturales, en la forma y el largo que te pida el cuerpo.</p></div></article>
+      <article class="esp-card"><img src="img/cejas.jpg" alt="Laminado de cejas antes y después" loading="lazy"><div><h3>Mirada</h3><p>Laminado de cejas y lifting de pestañas para completar el look.</p></div></article>
+    </div>
+  </div>
+</section>
+
+<section class="ritual">
+  <div class="wrap">
+    <div class="head">
+      <div><span class="eyebrow" style="opacity:.6">Así es tu cita</span><h2 class="rv">El ritual<br><em>Nailuxe</em></h2></div>
+      <p class="rv">Toca cada paso para verlo.</p>
+    </div>
+    <div class="steps" id="steps">
+      <div class="st open"><b>01</b><div><h3>Me cuentas qué te apetece</h3><p>Fotos, ideas, un color que viste por la calle… o nada claro. Lo hablamos antes de empezar y te digo el precio.</p></div></div>
+      <div class="st"><b>02</b><div><h3>Elegimos forma y largo</h3><p>Miramos tu mano y tu día a día para que la forma y la talla te queden bien y te duren.</p></div></div>
+      <div class="st"><b>03</b><div><h3>Trabajo sin prisas</h3><p>Una clienta cada vez. Preparo bien tu uña natural y cuido cada detalle del diseño.</p></div></div>
+      <div class="st"><b>04</b><div><h3>Te vas con tus cuidados</h3><p>Te explico cómo mantenerlas perfectas y cuándo volver para el relleno.</p></div></div>
+    </div>
+  </div>
+</section>
+
+<section class="valores">
+  <div class="wrap">
+    <div class="head"><div><span class="eyebrow" style="opacity:.6">Lo que me importa</span><h2 class="rv">Mis <em>tres</em> reglas</h2></div></div>
+    <div class="val">
+      <div class="rv"><i>✦</i><h3>Tu uña natural primero</h3><p>Un diseño bonito no vale nada si estropea tu uña. Por eso la preparo y la cuido en cada cita.</p></div>
+      <div class="rv"><i>✦</i><h3>Cada set es único</h3><p>Nada de plantillas: forma, largo y diseño pensados para tu mano y tu estilo.</p></div>
+      <div class="rv"><i>✦</i><h3>Un rato para ti</h3><p>Sin prisas y sin ruido. Tu cita es tu momento, y así lo trato.</p></div>
+    </div>
+  </div>
+</section>
+
+<section class="estudio">
+  <div class="wrap">
+    <div class="est-card rv">
+      <div>
+        <span class="eyebrow" style="opacity:.6">El estudio</span>
+        <h2>Te espero en <em>Viesques</em></h2>
+        <p>Calle Corín Tellado, 3, bajo · 33204 Gijón</p>
+      </div>
+      <div class="btns">
+        <a class="btn btn-solid" href="index.html#cita">Pedir cita →</a>
+        <a class="btn btn-ghost" href="https://maps.app.goo.gl/ehcDgFLsmTQH2are7" target="_blank" rel="noopener">Cómo llegar</a>
+        <a class="btn btn-ghost" href="https://instagram.com/nailuxe_irealv" target="_blank" rel="noopener">@nailuxe_irealv</a>
+      </div>
+    </div>
+  </div>
+</section>
+
+<footer><div class="wrap"><span>© Nailuxe · Irene Álvarez · Gijón</span><span>Web hecha por Lace · lacedev.com</span></div></footer>
+
+<a class="wa" href="https://wa.me/34604811486?text=Hola%20Irene!%20Quer%C3%ADa%20pedir%20cita%20%F0%9F%92%85" target="_blank" rel="noopener" aria-label="WhatsApp">
+  <svg viewBox="0 0 32 32"><path d="M16 3C9 3 3.3 8.6 3.3 15.6c0 2.4.7 4.7 1.9 6.7L3 29l6.9-2.1c1.9 1 4 1.6 6.1 1.6 7 0 12.7-5.7 12.7-12.7S23 3 16 3zm0 23.2c-2 0-3.9-.6-5.5-1.6l-.4-.2-4.1 1.2 1.2-4-.3-.4c-1.1-1.7-1.7-3.6-1.7-5.6C5.2 9.7 10 5 16 5s10.8 4.8 10.8 10.7S22 26.2 16 26.2zm5.9-8c-.3-.2-1.9-.9-2.2-1-.3-.1-.5-.2-.7.2-.2.3-.8 1-1 1.2-.2.2-.4.2-.7.1-.3-.2-1.4-.5-2.6-1.6-1-.9-1.6-1.9-1.8-2.2-.2-.3 0-.5.1-.7l.5-.6c.2-.2.2-.3.3-.5.1-.2 0-.4 0-.6l-1-2.4c-.3-.6-.5-.5-.7-.5h-.6c-.2 0-.6.1-.9.4-.3.3-1.2 1.2-1.2 2.9s1.2 3.4 1.4 3.6c.2.2 2.4 3.7 5.9 5.1 2.9 1.1 3.5.9 4.1.8.6-.1 1.9-.8 2.2-1.5.3-.8.3-1.4.2-1.5-.1-.2-.3-.3-.6-.4z"/></svg>
+</a>
+
+<script>
+const hdr=document.getElementById('top'),drop=document.getElementById('drop'),mb=document.getElementById('menuBtn');
+addEventListener('scroll',()=>hdr.classList.toggle('solid',scrollY>40),{passive:true});
+mb.onclick=()=>{const o=drop.classList.toggle('open');mb.setAttribute('aria-expanded',o);mb.textContent=o?'Cerrar ✕':'Menú ▾'};
+drop.querySelectorAll('a').forEach(a=>a.onclick=()=>{drop.classList.remove('open');mb.textContent='Menú ▾'});
+document.querySelectorAll('#steps .st').forEach(s=>s.onclick=()=>{document.querySelectorAll('#steps .st').forEach(x=>x.classList.toggle('open',x===s&&!s.classList.contains('open')))});
+const io=new IntersectionObserver(es=>es.forEach(e=>{if(e.isIntersecting){e.target.classList.add('in');io.unobserve(e.target)}}),{threshold:.15});
+document.querySelectorAll('.rv').forEach(el=>io.observe(el));
+/* contadores */
+const co=new IntersectionObserver(es=>es.forEach(e=>{if(!e.isIntersecting)return;const el=e.target,to=+el.dataset.count,dec=el.dataset.dec,pre=el.dataset.prefix||'';let t0=null;
+  const step=t=>{t0??=t;const k=Math.min(1,(t-t0)/1200),v=to*(1-Math.pow(1-k,3));el.textContent=pre+(dec?v.toFixed(1).replace('.',','):Math.round(v));if(k<1)requestAnimationFrame(step)};requestAnimationFrame(step);co.unobserve(el)}),{threshold:.6});
+document.querySelectorAll('[data-count]').forEach(el=>co.observe(el));
+</script>
+</body>
+</html>
